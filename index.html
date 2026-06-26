@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI SA - Freedom Bright Impairment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services_styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003366',    // fbi-navy
+                        accent: '#007BFF',     // fbi-blue
+                        highlight: '#f2a141',  // fbi-orange
+                        background: '#003366', // main background (navy)
+                        surface: '#FFFFFF',    // white sections
+                        light: '#F0F7FF',      // light background sections
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-gray-800 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-md border-b border-gray-200transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-centerjustify-center">
+                            <img src="images/cropped-fbi-Copy-270x270.png" alt="FBI SA Logo">
+                        </div>
+                        <span class="text-2xl font-bold text-white font-serif">FBI SA</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="donate.html" class="text-white hover:text-highlight font-mediumtransition-colors">Donate</a>
+                    <a href="about.html" class="text-white hover:text-highlight font-mediumtransition-colors">About</a>
+                    <a href="services.html" class="text-white hover:text-highlight font-mediumtransition-colors">Services</a>
+                    <a href="gallery.html" class="text-white hover:text-highlight font-mediumtransition-colors">Gallery</a>
+                    <a href="contact_us.html" class="px-6 py-2 bg-highlight text-whiterounded-full hover:bg-orange-600 transition-all transform hover:scale-105font-medium">Contact Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-white/20" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+                </button>
+            </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-primary/95 border-t" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="donate.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">Donate</a>
+                <a href="about.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">About</a>
+                <a href="services.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">Services</a>
+                <a href="gallery.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">Gallery</a>
+                <a href="contact_us.html" class="block px-3 py-2 bg-highlight text-white font-medium rounded-md hover:bg-orange-600">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fbi-tagline-banner">
+        <i class="fas fa-wheelchair"></i> Disability | 
+        <i class="fas fa-child"></i> Orphanage | 
+        <i class="fas fa-users"></i> Youth | 
+        <i class="fas fa-tree"></i> Community
+    </div>
+
+    <section class="hero fbi-hero watermarked">
+        <img src="images/IMG_5007.jpg" alt="" class="watermark-img">
+        
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: center; text-align: left;" class="z-index-1">
+                <div>
+                    <div style="color: #f2a141; font-weight: 600; margin-bottom: 10px;">WELCOME TO</div>
+                    <h1>Freedom Bright <span>Impairment SA</span></h1>
+                    <p style="font-size: 1.2rem; margin: 30px 0;">FBI SA is a community organisation committed to supporting individuals with disabilities, youth, and communities in need — without discrimination.</p>
+                    <div>
+                        <a href="donate.html" class="cta-button">DONATE NOW</a>
+                        <a href="#" class="btn-outline" style="margin-left: 20px;">OUR SERVICES</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">7 <span>YEARS SERVING</span></div>
+                        <div class="stat-item">154k+ <span>HAPPY COMMUNITY</span></div>
+                        <div class="stat-item">27 <span>VOLUNTEERS</span></div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; border: 2px dashed #f2a141;">
+                        <i class="fas fa-hand-holding-heart" style="font-size: 5rem; color: #f2a141;"></i>
+                        <h3 style="margin: 20px 0;">#BrightFuture</h3>
+                        <p>Registered NPO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-grid">
+                <div>
+                    <h2 style="color: #003366; font-size: 2.5rem; margin-bottom: 30px;">Welcome to FBI SA</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Welcome to Freedom Bright Impairment SA, a community-led organisation dedicated to the development and support of individuals with disabilities, orphans, and youth in need. Since our founding, we have been working tirelessly to uplift and support our community.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px;">At FBI SA, we believe that every individual has the potential to thrive. By understanding the ever-changing needs of our community and engaging with various stakeholders, we create avenues for empowering vulnerable populations and enabling them to take control of their own lives.</p>
+                    <div>
+                        <a href="#" class="cta-button">More About Us</a>
+                        <a href="#" class="btn-text" style="margin-left: 20px;">Our Services →</a>
+                    </div>
+                </div>
+                <div class="welcome-highlight">
+                    <i class="fas fa-seedling"></i>
+                    <h3 style="font-size: 3rem; margin: 20px 0;">154,587</h3>
+                    <p>community members reached</p>
+                    <hr style="border: 1px solid #f2a14155; margin: 30px 0;">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3 style="font-size: 3rem; margin: 20px 0;">27</h3>
+                    <p>active volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="water-section">
+        <div class="container">
+            <div class="water-grid">
+                <div>
+                    <h2 style="color: #003366; font-size: 2.5rem; margin-bottom: 20px;">Water Scarcity</h2>
+                    <p style="color: #f2a141; font-weight: 600; margin-bottom: 20px;">A critical need — our response</p>
+                    <p style="margin-bottom: 20px;">The community faces a critical need for water infrastructure, as water scarcity is a significant challenge in rural areas. Residents are currently relying on nearby rivers for water access. In 2020, FBI SA successfully established a site to provide some community members with access to water.</p>
+                    <p style="margin-bottom: 30px;"><i class="fas fa-check-circle" style="color: #f2a141;"></i> We are pleased to partner with <strong>Jam Water Service</strong>, which has helped us implement boreholes and an effective water purification system to deliver safe, healthy water to the community.</p>
+                    
+                    <div class="water-stats">
+                        <div class="water-stat">7 <span>YEARS SERVING</span></div>
+                        <div class="water-stat">154,587 <span>HAPPY COMMUNITY</span></div>
+                        <div class="water-stat">27 <span>VOLUNTEERS</span></div>
+                    </div>
+                    
+                    <span class="partner-badge"><i class="fas fa-tint"></i> Jam Water Service partner</span>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-water" style="font-size: 8rem; color: #007BFF; opacity: 0.5;"></i>
+                    <p style="margin-top: 20px; font-weight: bold;">boreholes · purification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="color: #003366; font-size: 2.5rem; text-align: center; margin-bottom: 20px;">FAQ — why FBI SA?</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Why FBI SA?</h3>
+                    <p>The organization was founded to aid disadvantaged individuals and communities in need. We actively seek support to maintain our services for vulnerable populations.</p>
+                    <small style="color: #007BFF;">founded to aid · 100% inclusive</small>
+                </div>
+                <div class="faq-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>FBI Target?</h3>
+                    <p>Empower orphans, people with disabilities, youth and rural communities through sustainable projects, water access, skills & advocacy.</p>
+                    <small style="color: #007BFF;">SDG alignment</small>
+                </div>
+                <div class="faq-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>How to Join?</h3>
+                    <p>Volunteer, partner or donate. We're a sustainable organisation working for the better future on behalf of our beneficiaries.</p>
+                    <small style="color: #007BFF;">info@ourfbi.org</small>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; padding: 20px; background: #F0F7FF; border-radius: 50px;">
+                <i class="fas fa-leaf" style="color: #003366;"></i> Sustainable Organisation — working for the better future on behalf of our beneficiaries
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-extended">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>FBI SA</h4>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <img src="images/IMG_5007.jpg" alt="FBI SA Logo" style="height: 40px; width: auto;">
+                        <span style="font-weight: bold;">FBI SA</span>
+                    </div>
+                    <p><i class="fas fa-wheelchair"></i> Disability · Orphanage · Youth · Community</p>
+                    <span class="registered-npo"><i class="fas fa-check-circle"></i> Registered NPO</span>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-pin"></i> Limpopo, South Africa</li>
+                        <li><i class="fas fa-envelope"></i> info@ourfbi.org</li>
+                        <li><i class="fas fa-globe"></i> ourfbi.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">
+                <p>© 2026 FBI SA. Designed by FBI SA <i class="fas fa-heart" style="color: #f2a141;"></i></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/services_script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

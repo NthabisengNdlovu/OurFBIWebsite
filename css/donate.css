@@ -1,0 +1,249 @@
+.donate-hero {
+    background: linear-gradient(135deg, var(--fbi-navy) 0%, #1a4c8c 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(222, 224, 227, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(27, 93, 229, 0.5);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(27, 93, 229, 0.8);
+}
+.donate-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.donate-hero h1 span {
+    color: var(--fbi-orange);
+    display: block;
+    font-size: 2.5rem;
+}
+
+.donate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.donate-card {
+    background: var(--fbi-light);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #DDEBFF;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.donate-card h2 {
+    color: var(--fbi-navy);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--fbi-orange);
+    padding-bottom: 15px;
+}
+
+.amount-badge {
+    background: white;
+    border: 2px solid var(--fbi-orange);
+    color: var(--fbi-navy);
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.account-details {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.account-row {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.account-label {
+    font-weight: 700;
+    color: var(--fbi-navy);
+    width: 120px;
+}
+
+.account-value {
+    color: #333;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.impact-section {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 40px 0;
+    border: 2px dashed var(--fbi-orange);
+}
+
+.impact-section h3 {
+    color: var(--fbi-navy);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.impact-stat {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--fbi-navy);
+}
+
+.impact-stat span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.qr-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.qr-placeholder {
+    width: 200px;
+    height: 200px;
+    background: #f0f0f0;
+    margin: 20px auto;
+    border: 2px dashed var(--fbi-orange);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.amount-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.amount-option {
+    background: white;
+    border: 2px solid var(--fbi-navy);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-option:hover {
+    background: var(--fbi-navy);
+    color: white;
+}
+
+.cta-button-full {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    background: var(--fbi-blue);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button-orange {
+    background: var(--fbi-orange);
+    color: var(--fbi-navy);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.info-note {
+    background: #e8f4fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.centered-content {
+    text-align: center;
+    margin: 60px 0;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+}
+
+.centered-content h2 {
+    color: var(--fbi-navy);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.centered-content p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.nav-highlight {
+    color: #f2a141;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .donate-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .donate-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .impact-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .account-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .account-label {
+        width: auto;
+    }
+}

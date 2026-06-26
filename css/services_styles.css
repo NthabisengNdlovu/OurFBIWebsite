@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+:root {
+    --fbi-navy: #003366;
+    --fbi-blue: #007BFF;
+    --fbi-orange: #f2a141;
+    --fbi-light: #F0F7FF;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(222, 224, 227, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(27, 93, 229, 0.5);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(27, 93, 229, 0.8);
+}
+
+.top-bar {
+    background: var(--fbi-navy);
+    color: white;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    border-bottom: 3px solid var(--fbi-orange);
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-contact i, .top-contact span {
+    margin-right: 15px;
+}
+
+.top-contact a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-actions a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.donate-top-btn {
+    background: var(--fbi-orange);
+    color: var(--fbi-navy) !important;
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-main {
+    background: var(--fbi-navy);
+    padding: 15px 0;
+    border-bottom: var(--fbi-blue) 3px solid;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fbi-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fbi-logo-container img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.fbi-logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+}
+
+.fbi-logo-text small {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+
+.nav-menu a:hover {
+    border-bottom-color: var(--fbi-orange);
+}
+
+.take-tour {
+    border: 2px solid var(--fbi-orange);
+    border-radius: 5px;
+    padding: 5px 15px !important;
+}
+
+.fbi-tagline-banner {
+    background: var(--fbi-orange);
+    color: var(--fbi-navy);
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.fbi-tagline-banner i {
+    margin: 0 15px;
+}
+
+.hero {
+    background: var(--fbi-navy);
+    color: white;
+    padding: 100px 0;
+}
+
+.fbi-hero {
+    background: linear-gradient(135deg, var(--fbi-navy) 0%, #1a4c8c 100%);
+}
+
+.watermarked {
+    position: relative;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.watermark-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+    max-width: 300px;
+}
+
+.fbi-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.fbi-hero h1 span {
+    color: var(--fbi-orange);
+    display: block;
+    font-size: 2.5rem;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.stat-item span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.cta-button {
+    background: var(--fbi-blue);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--fbi-navy);
+}
+
+.btn-text {
+    color: var(--fbi-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.welcome-section {
+    padding: 80px 0;
+    background: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.welcome-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.welcome-highlight {
+    background: var(--fbi-navy);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.welcome-highlight i {
+    font-size: 3rem;
+    color: var(--fbi-orange);
+    margin-bottom: 20px;
+}
+
+.water-section {
+    background: var(--fbi-light);
+    padding: 80px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.water-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.water-stats {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.water-stat {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--fbi-navy);
+}
+
+.water-stat span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.partner-badge {
+    background: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.faq-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.faq-card {
+    background: var(--fbi-light);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid #DDEBFF;
+}
+
+.faq-card i {
+    font-size: 2.5rem;
+    color: var(--fbi-orange);
+    margin-bottom: 20px;
+}
+
+.faq-card h3 {
+    color: var(--fbi-navy);
+    margin-bottom: 15px;
+}
+
+.footer-extended {
+    background: #333333;
+    color: white;
+    padding: 60px 0 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    color: var(--fbi-orange);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: var(--fbi-orange);
+}
+
+.registered-npo {
+    background: #444;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.z-index-1 {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        justify-content: center;
+    }
+    
+    .welcome-grid,
+    .water-grid,
+    .faq-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .fbi-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .fbi-logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

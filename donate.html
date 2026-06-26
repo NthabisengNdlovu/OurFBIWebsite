@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - FBI SA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services_styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003366',    // fbi-navy
+                        accent: '#007BFF',     // fbi-blue
+                        highlight: '#f2a141',  // fbi-orange
+                        background: '#003366', // main background (navy)
+                        surface: '#FFFFFF',    // white sections
+                        light: '#F0F7FF',      // light background sections
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-gray-800 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-md border-b border-gray-200transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-centerjustify-center">
+                            <img src="images/cropped-fbi-Copy-270x270.png" alt="FBI SA Logo">
+                        </div>
+                        <span class="text-2xl font-bold text-white font-serif">FBI SA</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="donate.html" class="text-highlight font-semiboldhover:text-highlight">Donate</a>
+                    <a href="about.html" class="text-white hover:text-highlight font-mediumtransition-colors">About</a>
+                    <a href="services.html" class="text-white hover:text-highlight font-mediumtransition-colors">Services</a>
+                    <a href="gallery.html" class="text-white hover:text-highlight font-mediumtransition-colors">Gallery</a>
+                    <a href="contact_us.html" class="px-6 py-2 bg-highlight text-whiterounded-full hover:bg-orange-600 transition-all transform hover:scale-105font-medium">Contact Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-white/20" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+                </button>
+            </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-primary/95 border-t" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="donate.html" class="block px-3 py-2 text-highlight hover:text-highlighthover:bg-white/10 rounded-md">Donate</a>
+                <a href="about.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">About</a>
+                <a href="services.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">Services</a>
+                <a href="gallery.html" class="block px-3 py-2 text-white hover:text-highlighthover:bg-white/10 rounded-md">Gallery</a>
+                <a href="contact_us.html" class="block px-3 py-2 bg-highlight text-white font-medium rounded-md hover:bg-orange-600">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <section class="donate-hero">
+        <div class="container">
+            <h1>Make a <span>Difference Today</span></h1>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 20px auto;">Your contribution provides water, education, and hope to those who need it most.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="donate-grid">
+            <div class="donate-card">
+                <h2><i class="fas fa-heart" style="color: #f2a141; margin-right: 10px;"></i> Give Today</h2>
+                <div class="amount-badge">From R50</div>
+                <p style="font-size: 1.2rem; margin: 20px 0;">Choose your amount:</p>
+                <div class="amount-options">
+                    <span class="amount-option">R100</span>
+                    <span class="amount-option">R200</span>
+                    <span class="amount-option">R500</span>
+                    <span class="amount-option">R1000</span>
+                </div>
+                <a href="#" class="cta-button-full">DONATE NOW</a>
+                
+                <div class="qr-section">
+                    <p style="font-weight: bold; margin-bottom: 10px;">Scan to pay with SnapScan</p>
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode" style="font-size: 3rem; color: #ccc;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donate-card">
+                <h2><i class="fas fa-bank" style="color: #f2a141; margin-right: 10px;"></i> Bank Transfer</h2>
+                <div class="account-details">
+                    <div class="account-row">
+                        <div class="account-label">Bank:</div>
+                        <div class="account-value"><strong>FNB</strong> (First National Bank)</div>
+                    </div>
+                    <div class="account-row">
+                        <div class="account-label">Account Name:</div>
+                        <div class="account-value">Freedom Bright Impairment Community</div>
+                    </div>
+                    <div class="account-row">
+                        <div class="account-label">Account No:</div>
+                        <div class="account-value" style="font-size: 1.3rem;">63007225683</div>
+                    </div>
+                    <div class="account-row">
+                        <div class="account-label">Branch Code:</div>
+                        <div class="account-value">231433</div>
+                    </div>
+                </div>
+                <div class="info-note">
+                    <i class="fas fa-info-circle" style="color: var(--fbi-blue);"></i> 
+                    Please use your name and surname as reference.
+                </div>
+            </div>
+        </div>
+
+        <div class="impact-section">
+            <h3>Your contribution makes a significant impact.</h3>
+            <div class="impact-stats">
+                <div class="impact-stat">R50 <span>provides water for a family</span></div>
+                <div class="impact-stat">R200 <span>feeds a child for a month</span></div>
+                <div class="impact-stat">R500 <span>supports education materials</span></div>
+            </div>
+            <a href="#" class="cta-button-orange">Make Your Donation Today</a>
+        </div>
+
+        <div class="centered-content">
+            <h2>Are you willing?</h2>
+            <p>Every rand counts. Join us in building a brighter future.</p>
+        </div>
+    </div>
+
+    <footer class="footer-extended">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>FBI SA</h4>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <img src="images/IMG_5007.jpg" alt="FBI SA Logo" style="height: 40px;">
+                        <span style="font-weight: bold;">FBI SA</span>
+                    </div>
+                    <p><i class="fas fa-wheelchair"></i> Disability · Orphanage · Youth · Community</p>
+                    <span class="registered-npo"><i class="fas fa-check-circle"></i> Registered NPO</span>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-pin"></i> Limpopo, South Africa</li>
+                        <li><i class="fas fa-envelope"></i> info@ourfbi.org</li>
+                        <li><i class="fas fa-globe"></i> ourfbi.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">
+                <p>© 2026 FBI SA. Designed by FBI SA <i class="fas fa-heart" style="color: #f2a141;"></i></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/services_script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
